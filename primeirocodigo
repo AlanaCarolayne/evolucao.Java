@@ -1,0 +1,36 @@
+package carrinho;
+
+public class Carro {
+
+    //--------------atributos da classe------------//
+
+    private String tipo;
+    private String cor;
+    private String placa;
+    private int numPortas;
+
+    //------------------métodos da classe---------------------//
+
+    public void setCor (String cor){
+        this.cor = cor;
+    }
+    public String getCor (){
+       return cor;
+    }
+
+//-----------------método principal------------------//
+        public static void main(String[] args){
+    Carro meuCarro = new Carro ();
+
+     meuCarro.tipo = "fusca";
+     meuCarro.cor = "azul";
+     meuCarro.placa = "xxx1111";
+     meuCarro.numPortas = 4;
+     
+    System.out.println ("Meu carro é um " + meuCarro.tipo);
+    System.out.println ("A cor do meu carro é " + meuCarro.cor);
+    System.out.println ("A placa do meu carro é " + meuCarro.placa);
+    System.out.println ("Meu carro tem " + meuCarro.numPortas + " portas.");
+    }
+}
+
