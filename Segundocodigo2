@@ -1,0 +1,32 @@
+package carrinho;
+
+public class Gerente extends Funcionario{
+
+    private String usuario;
+    private String senha;
+
+public Gerente (String nome, double sal, String usuario, String senha){
+    super(nome, sal);
+    this.usuario = usuario;
+    this.senha = senha;
+}
+
+//------------metodo para calcular bonificação------------//
+public double calculaSal (){
+    return this.getSal() * 0.1 +2000.00;
+}
+
+//-------------------------metodos da classe-------------//
+public void setUsuario (String usuario){
+    this.usuario = usuario;
+}
+public String getUsuario (){
+    return usuario;
+}
+public void setSenha(String senha) {
+    this.senha = senha;
+}
+public String getSenha() {
+    return senha;
+}
+}
