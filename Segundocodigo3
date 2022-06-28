@@ -1,0 +1,26 @@
+package carrinho;
+
+public class TestaFucionario {
+    public static void main(String[] args) {
+
+        Funcionario fun = new Funcionario ("Ana", 2000.00);
+        Gerente gen = new Gerente("Eva", 5000.00, "g123", "abc123");
+
+        System.out.println ("------------Dados do funcionario-----------");
+        System.out.println ("O nome do funcionario é: " + fun.getNome());
+        System.out.println ("O salário do funcionario é: " + fun.getSal());
+        System.out.println (" ");
+        System.out.println ("------------Dados do gerente---------------");
+        System.out.println ("O nome do gerente é: " + gen.getNome());
+        System.out.println ("O salario do gerente é: " + gen.getSal());
+        System.out.println ("O usuário do gerente é: " + gen.getUsuario());
+        System.out.println ("A senha do gerente é: " + gen.getSenha());
+        System.out.println (" ");
+        System.out.println ("--------------Bonificação-------------------");
+        System.out.println (" A bonificação do funcionario é: " + fun.calculaSal());
+        System.out.println (" A bonicação do gerente é: " + gen.calculaSal());
+       
+
+
+    }
+}
