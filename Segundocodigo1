@@ -1,0 +1,40 @@
+package carrinho;
+
+public class Funcionario {
+    
+    //-----------------atributos da classe mãe----------------//
+
+    private String nome;
+    private double sal;
+   
+    public Funcionario(String nome, double sal){
+        this.nome = nome;
+        this.sal = sal;
+    }
+
+    public Funcionario (){
+        super ();
+    }
+
+    //------------metodo para calcular bonificação------------//
+    public double calculaSal (){
+        return this.sal * 0.1;
+    }
+    
+    //------------------Métodos da classe--------------------//
+    
+    public void setNome (String nome){
+        this.nome = nome;
+    }
+    public String getNome (){
+        return nome;
+    }
+
+    public void setSal (double sal){
+        this.sal = sal;
+    }
+    public double getSal (){
+        return sal;
+    }
+   
+}
